@@ -1,4 +1,5 @@
 ### Help!!! We need help :-)
+#### Hey! Drop us a mail at 'getintouch@adimpression.mobi' please, and we'd be happy to explain further. Thanks!
 
 #### What we do,
 
@@ -22,7 +23,7 @@ We all need to jump into action at some point. Here's how you do it:
 #### Graphic Artist - Basically, an expert with good artistic skills. If you can draw it with some tool, we'll do the rest.
 #### HBase developer - Who'll basically handle the data storage on HBase side. We really need someone to do this!
 
-How do you get started? Raise an issue here https://github.com/Adimpression/www.ilikeplaces.com/issues stating you'd like to jump into action :-)
+How do you get started? We'd be more than glad to hear from you at 'getintouch@adimpression.mobi'. If you're not clear about what we're about, you still can mail us. We're definitely not gonna alienate you!
 ___
 
 
