@@ -76,7 +76,7 @@ abstract public class SignInOn extends AbstractWidgetListener<SignInOnCriteria> 
         signinonBG,
 
         signinonFacebook,
-        signinonGoogle
+        signinon_power_off, signinon_power_on, signinonGoogle
     }
 
 // --------------------------- CONSTRUCTORS ---------------------------
@@ -123,8 +123,10 @@ abstract public class SignInOn extends AbstractWidgetListener<SignInOnCriteria> 
             }
             UCShowHideWidgets:
             {
-                $$displayBlock($$(SignInOnIds.signinon_logon));
-                $$displayNone($$(SignInOnIds.signinon_login));
+                $$displayBlock(SignInOnIds.signinon_logon);
+                $$displayNone(SignInOnIds.signinon_login);
+                $$displayBlock(SignInOnIds.signinon_power_on);
+                $$displayNone(SignInOnIds.signinon_power_off);
             }
 
             UCAutoplay:
@@ -137,8 +139,10 @@ abstract public class SignInOn extends AbstractWidgetListener<SignInOnCriteria> 
         } else {
             UCShowHIdeWIdgets:
             {
-                $$displayBlock($$(SignInOnIds.signinon_login));
-                $$displayNone($$(SignInOnIds.signinon_logon));
+                $$displayBlock(SignInOnIds.signinon_login);
+                $$displayNone(SignInOnIds.signinon_logon);
+                $$displayBlock(SignInOnIds.signinon_power_off);
+                $$displayNone(SignInOnIds.signinon_power_on);
             }
             UCShowPleaseLoginMessage:
             {

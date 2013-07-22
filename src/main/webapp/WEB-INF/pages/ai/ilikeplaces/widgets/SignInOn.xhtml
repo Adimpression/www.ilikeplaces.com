@@ -7,7 +7,8 @@
 <body>
 <div class="use100" id="SignInOn" style="display:block;" itsnat:nocache="true" xmlns:itsnat="http://itsnat.org/itsnat">
 <div class="use100 signinon_header" id="signinonBG">
-<div class="use100" style="background:url(/images/Metal_translucent.png) repeat;" id="signinon_power_off">
+<div class="use100 signinon_power_off" style="background:url('/images/Metal_translucent.png') repeat;"
+     id="signinon_power_off">
     <div class="use100" style="height:78px;display:block;">
         <div class="use10 use80a" style="height: 68px;">
             <img id="Juice_Signup_Show" src="/images/Sign_up.png" alt="Sign up.. It's free!" class="height_total"
@@ -22,7 +23,7 @@
                 <img src="/images/Power_off_Off_home.png" alt="Login"
                      id="PowerOnOff"
                      style="height:58px;cursor:pointer;" class="click_indicator"
-                     onclick="$('#signinon_power_off').slideUp();$('#signinon_power_on').slideDown();"/>
+                     onclick="$('.signinon_power_off').slideUp();$('.signinon_power_on').slideDown();"/>
             </div>
             <div class="use100" style="height: 10px;">
                 &nbsp;
@@ -30,7 +31,8 @@
         </div>
     </div>
 </div>
-<div class="use100" style="background:url(/images/Metal_translucent.png) repeat;display: none;" id="signinon_power_on">
+<div class="use100 signinon_power_on" style="background:url('/images/Metal_translucent.png') repeat;display: none;"
+     id="signinon_power_on">
     <!-- Only one of these 2 divs are visible at a given time -->
     <div class="use100" style="height:78px;display:none;" id="signinon_login">
         <div class="use20">

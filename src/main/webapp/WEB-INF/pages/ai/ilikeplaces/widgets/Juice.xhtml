@@ -114,7 +114,7 @@
                                                 border: 0 #0372d9 dotted;border-bottom-width: 5px;
                                                 background:url('/images/Metal_translucent.png') repeat;font-size:31px;"
                                        class="use80 use10p use10a vtip JSJuicePlaceInput"
-                                       onclick="suggestPlace();"
+                                       onclick="if(wasPlaceSearchBoxClickedOnce()) {suggestPlace();} placeSearchBoxClicked = true;"
                                         />
                             </div>
                         </div>
@@ -174,6 +174,12 @@
     </div>
 </div>
 <script type="text/javascript">
+    var placeSearchBoxClicked = false;
+
+    function wasPlaceSearchBoxClickedOnce() {
+        return placeSearchBoxClicked;
+    }
+
     function suggestPlace() {
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(function (location) {
