@@ -411,10 +411,21 @@ public class ListenerMain implements ItsNatServletRequestListener {
 
                                 titleManifest.add(eventJSONObject.get("title").toString());
 
+                                final String photoUrl;
+                                String temp = null;
+                                try {
+                                    temp = eventJSONObject.getJSONObject("image").get("url").toString();
+                                } catch (JSONException e) {
+                                    SmartLogger.g().l(e.getMessage());
+                                } finally {
+                                    photoUrl = temp;
+                                }
+                                //The pain I go through to make variables final :D
+
                                 new Event(request__, new EventCriteria()
                                         .setEventName(eventJSONObject.get("title").toString())
                                         .setEventStartDate(eventJSONObject.get("start_time").toString())
-//                                        .setEventPhoto(eventJSONObject.getJSONObject("image").get("url").toString())
+                                        .setEventPhoto(photoUrl)
                                         .setPlaceCriteria(
                                                 new PlaceCriteria()
                                                         .setPlaceNamePre("This event is taking place in ")

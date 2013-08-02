@@ -9,8 +9,11 @@ package ai.ilikeplaces.logic.Listeners.widgets.schema.thing;
 public class EventCriteria {
 
     private String eventName;
+
     private String eventStartDate;
+
     private String eventPhoto;
+
     private PlaceCriteria placeCriteria;
 
 
@@ -42,7 +45,7 @@ public class EventCriteria {
     }
 
     public String getEventPhoto() {
-        return "" + eventPhoto;//Returning empty if null
+        return eventPhoto == null ? "" : eventPhoto;//Returning empty if null
     }
 
     public EventCriteria setEventPhoto(final String eventPhoto) {
