@@ -415,7 +415,7 @@ public class ListenerMain implements ItsNatServletRequestListener {
                                 String temp = null;
                                 try {
                                     temp = eventJSONObject.getJSONObject("image").get("url").toString();
-                                } catch (JSONException e) {
+                                } catch (final Throwable e) {
                                     SmartLogger.g().l(e.getMessage());
                                 } finally {
                                     photoUrl = temp;
