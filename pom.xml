@@ -399,6 +399,15 @@
         </dependency>
 
 
+        <!--Logstash Dependencies-->
+        <dependency>
+            <groupId>net.logstash.logback</groupId>
+            <artifactId>logstash-logback-encoder</artifactId>
+            <version>1.2</version>
+        </dependency>
+        <!--EO Logstash Dependencies-->
+
+
     </dependencies>
     <build>
         <resources>
