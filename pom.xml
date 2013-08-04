@@ -141,27 +141,19 @@
         </dependency>
 
         <dependency>
-            <groupId>logback</groupId>
+            <groupId>ch.qos.logback</groupId>
             <artifactId>logback-core</artifactId>
-            <version>0.9.17</version>
-            <scope>system</scope>
-            <systemPath>${basedir}/src/main/webapp/WEB-INF/lib/logback-core-0.9.17.jar</systemPath>
+            <version>1.0.13</version>
         </dependency>
         <dependency>
-            <groupId>logback</groupId>
+            <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
-            <version>0.9.17</version>
-            <scope>system</scope>
-            <systemPath>${basedir}/src/main/webapp/WEB-INF/lib/logback-classic-0.9.17.jar
-            </systemPath>
+            <version>1.0.13</version>
         </dependency>
         <dependency>
-            <groupId>logback</groupId>
+            <groupId>ch.qos.logback</groupId>
             <artifactId>logback-access</artifactId>
-            <version>0.9.17.</version>
-            <scope>system</scope>
-            <systemPath>${basedir}/src/main/webapp/WEB-INF/lib/logback-access-0.9.17.jar
-            </systemPath>
+            <version>1.0.13</version>
         </dependency>
 
         <!--Rackspace Cloud Files Dependencies-->
